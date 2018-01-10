@@ -1,13 +1,38 @@
+html {
+  height: 100%;
+}
 body {
   font-family: Arial;
+  height: 100%;
+}
+
+#root-container {
+  position: relative;
+  min-height: 100%;
+}
+
+#content-container {
+  padding-bottom: 120px;
+}
+
+footer {
+  color: grey;
+  background: black;
+  padding: 50px 0px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
 }
 
 #title-heading {
   text-align: center;
+  padding: 20px;
 }
 
 #games-list {
-  text-align: center;  
+  text-align: center;
 }
 
 .game-img {
