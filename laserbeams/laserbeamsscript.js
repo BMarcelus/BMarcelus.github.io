@@ -36,7 +36,11 @@
 			var score = 0;
 
 			var FPS = 35;
+			var pause = false;
+			var increment = false;
 			setInterval(function() {
+					if(pause&&!increment) return;
+					increment=false;
 					update();
   				draw();
 			}, 1000/FPS);
@@ -109,9 +113,10 @@
 	          {
 	          	if(state=="play")
 	          	{
-								if(this.vy>0)
-								this.vy=-jumpPower;
-								else this.vy -= jumpPower*.7;
+								// if(this.vy>0)
+								// this.vy=-jumpPower;
+								// else this.vy -= jumpPower*.7;
+								this.vy = -jumpPower;
 	          		if(sounds)
 	          		Sound.play("flap");
 	          	}
@@ -581,7 +586,6 @@
 					player.jump();
 					player.flip();
 				}
-
 			}
 			function die()
 			{

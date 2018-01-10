@@ -1,0 +1,40 @@
+body {
+  font-family: Arial;
+}
+
+#title-heading {
+  text-align: center;
+}
+
+#games-list {
+  text-align: center;  
+}
+
+.game-img {
+  width: 300px;
+  height: 300px;
+}
+
+.game-container {
+  width: 300px;
+  text-align: center;
+  display: inline-block;
+  margin: 10px;
+}
+
+.game-description {
+  text-align: left;
+}
+
+.game-title {
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  display: block;
+  color: black;
+}
+
+.game-title:visited {
+  text-decoration: none;
+  color: inherit;
+}

@@ -2,12 +2,23 @@ var gamesData = [
   {
     name: "I Puzzle Good",
     url: "IPuzzleGood",
+    description: 'A puzzle platformer where you try to puzzle good'
   },
   {
     name: "Laserbeams",
     url: "laserbeams",
+    description: "An action packed thriller about dodging lasers and looking cool"
+  },
+  {
+    name: "Swivel",
+    url: "swivel",
+    description: "A simple game about controlling a robotic arm"
   },
 ]
+
+function linkify(element, url) {
+  return '<a href='+url+'>'+element+'</a>';
+}
 
 window.onload = function() {
   var $1 = document.querySelector.bind(document);
@@ -20,7 +31,12 @@ window.onload = function() {
     var gameData = gamesData[i];
     var url = gameData.url || "";
     var name = gameData.name || "";
-    var element = '<li><a href="'+urlPrefix+url+'">'+name+'</a></li>';
+    var description = gameData.description || "";
+    var linkElement = '<a class="game-title" href="'+urlPrefix+url+'">'+name+'</a>';
+    var description = '<p class="game-description">'+description+'</p>'
+    var img = '<img class="game-img" src="./images/'+url+'.png" />';
+    img = linkify(img, urlPrefix+url);
+    var element = '<div class="game-container">'+img+linkElement+description+'</div>';
     gamesList.innerHTML += element;
   }
 }
