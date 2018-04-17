@@ -14,6 +14,11 @@ var gamesData = [
     url: "swivel",
     description: "A simple game about controlling a robotic arm"
   },
+  {
+    name: "<3K Runner",
+    url: "3kRunner",
+    description: "An Infinite runner made in less than 3kb"
+  },
 ]
 
 function linkify(element, url) {
