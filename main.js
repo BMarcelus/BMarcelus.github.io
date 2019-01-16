@@ -19,6 +19,11 @@ var gamesData = [
     url: "3kRunner",
     description: "An Infinite runner made in less than 3kb"
   },
+  {
+    name: "Jimothy Piggerton",
+    url: "JimothyPiggerton",
+    description: "Save Piggerton from the Butcher!"
+  },
 ]
 
 function linkify(element, url) {
