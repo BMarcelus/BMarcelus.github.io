@@ -24,6 +24,11 @@ var gamesData = [
     url: "JimothyPiggerton",
     description: "Save Piggerton from the Butcher!"
   },
+  {
+    name: "House",
+    url: "House",
+    description: "Every art asset is a house. Every sound effect is me saying house."
+  },
 ]
 
 function linkify(element, url) {
