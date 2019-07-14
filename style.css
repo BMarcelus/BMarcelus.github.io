@@ -31,7 +31,14 @@ footer {
 
 .section-content {
   text-align: center;
-  padding-bottom: 120px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 20px;
+  text-indent: 40px;
+}
+
+.left-align {
+  text-align: left;
 }
 
 #games-list {
