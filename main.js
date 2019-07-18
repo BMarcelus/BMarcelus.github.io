@@ -49,7 +49,7 @@ window.onload = function() {
     var description = gameData.description || "";
     var linkElement = '<a class="game-title" href="'+urlPrefix+url+'">'+name+'</a>';
     var description = '<p class="game-description">'+description+'</p>'
-    var img = '<img class="game-img" src="./images/'+url+'.png" />';
+    var img = '<img class="game-img" src="./images/'+url+'.png" alt="'+name+' thumbnail"/>';
     img = linkify(img, urlPrefix+url);
     var element = '<div class="game-container">'+img+linkElement+description+'</div>';
     gamesList.innerHTML += element;
