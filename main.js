@@ -32,7 +32,7 @@ var gamesData = [
 ]
 
 function linkify(element, url) {
-  return '<a href='+url+'>'+element+'</a>';
+  return '<a href='+url+'/>'+element+'</a>';
 }
 
 window.onload = function() {
