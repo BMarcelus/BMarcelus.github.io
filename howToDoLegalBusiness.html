@@ -1,0 +1,74 @@
+<head>
+  <style>
+    .game-name {
+      font-style: italic;
+    }
+  </style>
+</head>
+<h1>
+  Contact Games by Brian Dizon
+</h1>
+<h2>
+You have been redirected to this page because you attempted to run the game <span class="game-name"></span> from a local server without the proper dev tools and authentication
+</h2>
+<h2>
+  How to do Legal Business with Brians Games and on the internet
+</h2>
+<p>
+If you would like to add a game to your website to increase traffic or 
+make ad revenue, you should purchase an official license.
+The price of Non-exclusive licenses from Brians Games depend on 
+<ul>
+<li>The Game, </li>
+<li>the quality of the website,</li> 
+<li>and the potential cross-advertisement benefits.</li>
+</ul>
+</p>
+
+<p>
+If you are interested in legally adding <span class="game-name"></span> to your website 
+please make an official business inquiry to
+<p><a href="mailto:brianmdizon@gmail.com">brianmdizon@gmail.com</a></p>
+</p>
+
+<h2>
+    The game <span class="game-name"></span> is protected under copyrighted.
+</h2>
+    <div>
+    <p>
+    If you are attempting to make money from using content you do not own, you are breaching copyright.
+    </p>
+    <p>
+    If you are using content under fair-use but the content was obtained illegally, such as pirating the source code, you are breaching copyright.
+    </p>
+    <p>
+    The penalty for breaching copyright includes the following: 
+    <ul>
+      <li>up to $150,000 per infringement</li>
+      <li>all damages and profits from infringement</li>
+      <li>all court and attorny costs</li>
+      <li>possible jail time</li>
+    </ul>
+    </p>
+    [<a href="https://www.lib.purdue.edu/uco/CopyrightBasics/penalties.html">1</a>,
+    <a href="https://info.legalzoom.com/happens-break-copyright-laws-20309.html">2</a>,
+    <a href="https://en.wikipedia.org/wiki/Copyright_infringement#Criminal_law">3</a>
+    ]
+    </div>
+<script>
+  window.onload = function() {
+
+    var params = new URLSearchParams(window.location.search);
+
+    var gameName = params.get("gameName");
+    var hostName = params.get("illegalHost");
+
+    document.querySelectorAll(".game-name").forEach(function(e) {
+      e.innerHTML = gameName;
+    });
+
+    document.querySelectorAll(".illegal-host").forEach(function(e) {
+      e.innerHTML = hostName;
+    });
+  }
+</script>
