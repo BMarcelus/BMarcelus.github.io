@@ -5,9 +5,14 @@ var gamesData = [
     description: 'A puzzle platformer where you try to puzzle good'
   },
   {
-    name: "Laserbeams",
-    url: "laserbeams",
-    description: "An action packed thriller about dodging lasers and looking cool"
+    name: "House",
+    url: "House",
+    description: "Every art asset is a house. Every sound effect is me saying house."
+  },
+  {
+    name: "Jimothy Piggerton",
+    url: "JimothyPiggerton",
+    description: "Save Piggerton from the Butcher!"
   },
   {
     name: "Swivel",
@@ -20,15 +25,15 @@ var gamesData = [
     description: "An Infinite runner made in less than 3kb"
   },
   {
-    name: "Jimothy Piggerton",
-    url: "JimothyPiggerton",
-    description: "Save Piggerton from the Butcher!"
+    name: "Laserbeams",
+    url: "laserbeams",
+    description: "An action packed thriller about dodging lasers and looking cool"
   },
   {
-    name: "House",
-    url: "House",
-    description: "Every art asset is a house. Every sound effect is me saying house."
-  },
+    name: "Chesburgrelia",
+    url: "LD41",
+    description: 'Help lead the Chesburger revolution. A mobile cooking fighting game'
+  }
 ]
 
 function linkify(element, url) {
